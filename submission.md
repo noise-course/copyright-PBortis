@@ -329,12 +329,13 @@ Enforcement technology lags behind AI generation capabilities. Content ID excels
 - However, provides tools for rights holders to claim/monetize rather than evaluate fair use
 
 **Actual Enforcement:**
-- Content ID automatically claims/blocks without fair use analysis
-- All uses of copyrighted music (including arguably transformative cat edit) received claims
-- No algorithmic assessment of transformativeness - only rights holder preferences
+- Content ID automatically claims/blocks without fair use analysis for unmodified content
+- The original Mitski song was claimed immediately, but the cat edit evaded detection entirely
+- This suggests Content ID uses audio fingerprinting that can be bypassed with vocal modifications
+- No algorithmic assessment of whether evasion equals legal fair use
 
 **Gap Explanation:**
-Automated systems cannot perform nuanced fair use analysis requiring human judgment. Rights holders' economic incentives favor broad claims. Burden falls on users to dispute, creating chilling effect even for legitimate fair use.
+Automated systems cannot perform nuanced fair use analysis requiring human judgment. Interestingly, they also cannot detect all infringements - the cat edit evaded detection despite potentially still infringing the underlying composition. This creates two problems: (1) legitimate fair uses may be overclaimed, and (2) infringing content that evades fingerprinting goes unclaimed, creating inconsistent enforcement based on technical detection rather than legal merits.
 
 #### Gap 3: Short Clip "Safe Harbors"
 
@@ -348,12 +349,13 @@ Automated systems cannot perform nuanced fair use analysis requiring human judgm
 - Users often claim "fair use" for any short clip
 
 **Actual Enforcement:**
-- Content ID detected 10-second Mitski clip within a couple minutes
-- No duration threshold prevents detection
-- Rights holders can claim clips of any length
+- Content ID detected 12-second unmodified Mitski clip within 8 minutes
+- No duration threshold prevents detection of unmodified content
+- However, the same 12-second clip with cat meow modifications completely evaded detection
+- Rights holders can claim clips of any length, but only if Content ID's fingerprinting detects them
 
 **Gap Explanation:**
-User misconceptions about copyright law create false sense of security. Platform interfaces don't clearly educate users about copyright scope, leading to frequent infringement.
+User misconceptions about copyright law create false sense of security. Many believe short clips are "safe," but the reality is more nuanced: short unmodified clips are detected immediately, while modified clips may evade detection regardless of length. This isn't a legal safe harbor - it's a technical limitation. Platform interfaces don't clearly explain that evading detection doesn't equal legal protection.
 
 #### Gap 4: Rights Holder Discretion
 
@@ -367,12 +369,13 @@ User misconceptions about copyright law create false sense of security. Platform
 - Presents choice as rights holder preference rather than legal determination
 
 **Actual Enforcement:**
-- Same 8-second clip was monetized while 45-second clip was blocked
-- Identical legal status (both infringements) but different outcomes based on rights holder settings
-- No consistency across rights holders or even within same holder's content
+- The unmodified 12-second Mitski clip was claimed and monetized by Dead Oceans
+- The cat-modified 12-second clip was not detected at all
+- Both pieces likely have similar legal status (potential infringement), but vastly different platform outcomes
+- Outcome depends on whether Content ID's fingerprinting detects the content, not on legal merit
 
 **Gap Explanation:**
-Platform architecture treats copyright enforcement as rights holder preference rather than legal determination. This creates inconsistent user experience and masks legal realities - users may think short clips "passed" copyright review when they were simply monetized rather than blocked.
+Platform architecture creates a binary outcome based on technical detection: content is either automatically claimed (if detected) or completely ignored (if not detected). This has no correlation with legal fair use analysis. Users may incorrectly believe that content which evades detection is legally permissible, when in reality it simply bypassed the automated system. The platform treats copyright enforcement as a technical matching problem rather than a legal determination.
 
 ### Conclusions
 
